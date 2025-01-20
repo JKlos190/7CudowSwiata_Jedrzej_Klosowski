@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankieta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo" id="#back-to-top">7 Cudów Świata</div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Strona główna</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="ankieta.html">Ankieta</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="form-container">
+        <form action="mailto:jedrzej.klosowski@tm1.edu.pl" method="POST" class="form-content">
+            <h2 class="form-title">Zarejestruj się</h2>
+            
+            <label for="name" class="form-label">Imię</label>
+            <input type="text" id="name" name="name" required class="form-input">
+            
+            <label for="s_name" class="form-label">Nazwisko</label>
+            <input type="text" id="name" name="name" required class="form-input">
+            
+            
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" id="email" name="email" required class="form-input">
+
+            <label for="age" class="form-label">Twój wiek:</label>
+            <input type="number" id="age" name="age" required min="16" class="form-input">
+            
+            <label for="password" class="form-label">Hasło</label>
+            <input type="password" id="password" name="password" required class="form-input">
+            
+            <div class="checkbox-container">
+                <input type="checkbox" id="terms" name="terms" required class="form-checkbox">
+                <label for="terms" class="form-checkbox-label">Akceptuję regulamin</label>
+            </div>
+            
+            <button type="submit" class="form-button">Zarejestruj się</button>
+            </select>
+    
+            <label for="rating" class="form-label">Jak oceniasz moją stronę?</label>
+            <input type="range" id="rating" name="rating" min="1" max="10" class="form-slider">
+
+            <label for="comment" class="form-label">Komentarz</label>
+            <textarea id="comment" name="comment" class="form-textarea"></textarea>
+
+            <div>
+                <button type="reset" class="form-button">Wyczść</button>
+                <hr>
+                <button type="submit" class="form-button">Wyślij ankietę</button>
+                
+            </div>
+        </form>
+    </div>
+    <script>
+        function toggleMenu() {
+      const menu = document.querySelector('.menu');
+      menu.classList.toggle('show');
+  }
+  
+      </script>
+</body>
+</html>

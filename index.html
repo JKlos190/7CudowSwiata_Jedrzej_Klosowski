@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Strona prezentująca 7 cudów świata.">
+    <title>7 Cudów Świata</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo" id="#back-to-top">7 Cudów Świata</div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Strona główna</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="ankieta.html">Ankieta</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+
+    <main>
+        <section id="top" class="top">
+            <h1>Witaj na stronie 7 Cudów Świata!</h1>
+            <p>Odkryj najwspanialsze miejsca na naszej planecie.</p>
+        </section>
+
+        
+
+        <div class="button">
+            <h2 id="zabytki">Zabytki w Rio de Janeiro</h2>
+        </div>
+        <table>
+            <thead>
+              <tr>
+                <th>Nazwa</th>
+                <th>Państwo</th>
+                <th>Krótki opis</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Chichen Itza</td>
+                <td>Meksyk <img src="foto/meksyk.jpg" alt="Flaga Meksyku" class="flag"></td>
+                <td>Prekolumbijskie miasto Majów, znane z piramidy Kukulkana.</td>
+                </tr>
+                <tr>
+                <td>Koloseum</td>
+                <td>Włochy <img src="/foto/wlochy.jpg" alt="Flaga Włoch" class="flag"></td>
+                <td>Amfiteatr w Rzymie, symbol starożytnej architektury.</td>
+              </tr>
+              <tr>
+                <td>Machu Picchu</td>
+                <td>Peru <img src="/foto/peru.jpg" alt="Flaga Peru" class="flag"></td>
+                <td>Inkaskie miasto w Andach, położone na wysokości ponad 2400 m n.p.m.</td>
+              </tr>
+              <tr>
+                <td>Pomnik Chrystusa Odkupiciela</td>
+                <td>Brazylia <img src="foto/brazylia.jpg" alt="Flaga Brazylii" class="flag"></td>
+                <td>Słynny posąg w Rio de Janeiro, symbol chrześcijaństwa.</td>
+              </tr>
+              <tr>
+                <td>Petra</td>
+                <td>Jordania <img src="foto/jordania.jpg" alt="Flaga Jordanii" class="flag"></td>
+                <td>Starożytne miasto wykute w skałach, znane jako Różowe Miasto.</td>
+              </tr>
+              <tr>
+                <td>Wielki Mur Chiński</td>
+                <td>Chiny <img src="foto/chiny.jpg" alt="Flaga Chin" class="flag"></td>
+                <td>Najdłuższa budowla obronna na świecie.</td>
+              </tr>
+              <tr>
+                <td>Tadż Mahal</td>
+                <td>Indie <img src="foto/india.jpg" alt="Flaga Indii" class="flag"></td>
+                <td>Mauzoleum z białego marmuru, symbol miłości.</td>
+              </tr>
+            </tbody>
+          </table>
+          
+        <section id="about" class="about">
+            <h2>O cudach świata</h2>
+            <p>7 Cudów Świata to lista najbardziej znanych zabytków starożytności. Współczesna lista 7 Cudów Świata została ogłoszona w 2007 roku w wyniku internetowego głosowania. Wcześniejsze listy powstały w starożytności i w średniowieczu. Współczesna lista 7 Cudów Świata to:</p>
+            <ol>
+                <li>Chichen Itza</li>
+                <li>Koloseum</li>
+                <li>Machu Picchu</li>
+                <li>Pomnik Chrystusa Odkupiciela</li>
+                <li>Petra</li>
+                <li>Wielki Mur Chiński</li>
+                <li>Tadż Mahal</li>
+            </ol>
+        </div>
+
+        <ul>
+            <li><a href="https://pl.wikipedia.org/wiki/Siedem_cud%C3%B3w_%C5%9Bwiata" target="_blank">Więcej informacji dostępne jest na Wikipedia</a></li>
+        </ul>
+        </section>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10717482.210632669!2d11.468862527264928!3d49.018711759990154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ed8886cfadda85%3A0x72ef99e6b3fcf079!2sEuropa!5e0!3m2!1spl!2spl!4v1737057964920!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/fWfDEu0vMeY?si=Dq0fteW7fquYp0po" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </main>
+
+    <button id="back-to-top"><a href="#top" id="back-to-top">⬆️</a>⬆️</button>
+
+    <footer>
+        <p>Autor: Jędrzej Kłosowski 2TB</p>
+    </footer>
+    <script>
+      function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('show');
+}
+
+    </script>
+</body>
+
+</html>
